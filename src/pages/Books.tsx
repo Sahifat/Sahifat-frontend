@@ -25,7 +25,6 @@ interface CategoryFilter {
     color: string;
 }
 
-// Constants
 const CATEGORIES: CategoryFilter[] = [
     { id: 'all', name: 'All Books', color: 'from-amber-400 to-amber-600' },
     { id: 'Programming', name: 'Programming', color: 'from-amber-500 to-orange-600' },
