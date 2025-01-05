@@ -34,7 +34,6 @@ const relatedBooks = [
     },
 ];
 
-// Mock data for testing
 const mockBook = {
     title: "The Art of Programming",
     author: "John Smith",
