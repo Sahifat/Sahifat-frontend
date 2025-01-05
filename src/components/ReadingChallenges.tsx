@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { 
-    Trophy, Book, Crown, Sparkles,
-    Clock, Star, Medal, Rocket,
-    Flame, Zap, Brain, Award
+    Trophy, Crown, Sparkles,
+    Star, Medal, Rocket,
+    Brain
 } from 'lucide-react';
 
 const ReadingChallenges = () => {
