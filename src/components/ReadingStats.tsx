@@ -6,7 +6,6 @@ import {
     Brain, Flame, Zap, Star
 } from 'lucide-react';
 
-// Types
 interface Genre {
     name: string;
     progress: number;
