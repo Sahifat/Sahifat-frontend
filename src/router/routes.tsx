@@ -10,9 +10,20 @@ const Profile = lazy(() => import('../pages/Profile'));
 const VerifyEmail = lazy(() => import('../pages/auth/VerifyEmail'));
 const ForgotPassword = lazy(() => import('../pages/auth/ForgotPassword'));
 const ResetPassword = lazy(() => import('../pages/auth/ResetPassword'));
-
+const AllBooks = lazy(() => import('../pages/dashboard/AllBooks'));
+const Categories = lazy(() => import('../pages/dashboard/Categories'));
 const routes = [
     // dashboard
+    {
+        path: '/dashboard/books',
+        element: <AllBooks />,
+        layout: 'default',
+    },
+    {
+        path: '/dashboard/categories',
+        element: <Categories />,
+        layout: 'default',
+    },
     {
         path: '/',
         element: <Index />,
