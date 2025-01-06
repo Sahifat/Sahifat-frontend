@@ -7,9 +7,10 @@ interface ModalProps {
     onClose: () => void;
     title: string;
     children: React.ReactNode;
+    className?: string;
 }
 
-const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
+const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children, className }) => {
     return (
         <AnimatePresence>
             {isOpen && (
@@ -20,7 +21,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
                         animate={{ opacity: 1 }}
                         exit={{ opacity: 0 }}
                         onClick={onClose}
-                        className="fixed inset-0 bg-black/50 backdrop-blur-sm z-40
+                        className="fixed inset-0 bg-black/50 backdrop-blur-sm z-50
                             flex items-center justify-center">
 
                         {/* Modal */}
@@ -29,7 +30,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose, title, children }) => {
                             animate={{ opacity: 1, scale: 1, y: 0 }}
                             exit={{ opacity: 0, scale: 0.95, y: 20 }}
                             onClick={(e: React.MouseEvent<HTMLDivElement>) => e.stopPropagation()}
-                            className="w-full max-w-lg mx-4 z-50" >
+                            className={`w-full ${className} z-50`} >
 
                             <div className="bg-amber-50 dark:bg-[#1a1412] rounded-2xl shadow-xl
                                 border border-amber-200/50 dark:border-amber-800/50 overflow-hidden">
