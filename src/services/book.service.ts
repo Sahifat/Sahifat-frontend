@@ -1,17 +1,15 @@
 import { api } from '../config/axios';
 
-export interface Book {
-    id: string;
-    title: string;
-    author: string;
-    isbn: string;
-    categoryId: string;
-    quantity: number;
-    description?: string;
-    publishedYear?: number;
-    imageUrl?: string;
-    available: boolean;
-  }
+export interface CreateBookDto {
+  title: string;
+  author: string;
+  isbn: string;
+  categoryId: string;
+  quantity: number;
+  description?: string;
+  publishedYear?: number;
+  imageUrl?: string;
+}
 
 interface SearchBookParams {
   title?: string;
@@ -35,12 +33,12 @@ export const bookService = {
     return response.data;
   },
 
-  createBook: async (bookData: Omit<Book, 'id'>) => {
+  createBook: async (bookData: CreateBookDto): Promise<CreateBookDto> => {
     const response = await api.post('/books', bookData);
     return response.data;
   },
 
-  updateBook: async (id: string, bookData: Partial<Book>) => {
+  updateBook: async (id: string, bookData: Partial<CreateBookDto>) => {
     const response = await api.put(`/books/${id}`, bookData);
     return response.data;
   },
