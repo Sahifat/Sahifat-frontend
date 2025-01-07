@@ -12,7 +12,6 @@ export const api = axios.create({
   },
 });
 
-// Add auth token to requests
 api.interceptors.request.use(async (config) => {
   try {
     const tokens = await cognitoService.getTokens();
