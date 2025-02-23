@@ -26,7 +26,7 @@ const recentBooks: Book[] = [
         categoryId: "Programming",
         description: "A comprehensive guide to modern web technologies",
         publishedYear: 2024,
-        imageUrl: "https://images.unsplash.com/photo-1555066931-4365d14bab8c",
+        imageUrl: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6",
         available: true,
     },
     {
@@ -36,7 +36,7 @@ const recentBooks: Book[] = [
         categoryId: "Technology",
         description: "Exploring artificial intelligence fundamentals",
         publishedYear: 2024,
-        imageUrl: "https://images.unsplash.com/photo-1555066932-d69dac992864",
+        imageUrl: "https://images.unsplash.com/photo-1525547719571-a2d4ac8945e2",
         available: false,
     },
     {
@@ -46,7 +46,7 @@ const recentBooks: Book[] = [
         categoryId: "Technology",
         description: "Understanding modern cloud infrastructure",
         publishedYear: 2024,
-        imageUrl: "https://images.unsplash.com/photo-1555066933-d69dac993865",
+        imageUrl: "https://images.unsplash.com/photo-1451187580459-43490279c0fa",
         available: true,
     },
     {
@@ -56,9 +56,8 @@ const recentBooks: Book[] = [
         categoryId: "Security",
         description: "Essential knowledge for digital security",
         publishedYear: 2024,
-        imageUrl: "https://images.unsplash.com/photo-1555066934-d69dac994864",
+        imageUrl: "https://images.unsplash.com/photo-1550751827-4bd374c3f58b",
         available: true,
-
     }
 ];
 
